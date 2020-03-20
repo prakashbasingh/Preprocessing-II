@@ -1,17 +1,25 @@
   header{
-    width: 100%;
+    // align-self: center;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: center;
     justify-content: center;
+    margin: 0 55rem;
+
+    @media @phone {
+      width: 100%;
+      margin: 0;
+      justify-content: center;
+    }
+  
 
     .headerImage{
-      width: 70%;
+      width: 100%;
     margin-bottom: 10px;
-    border: 1px solid red;;
-}
+    }
     .firstparagraph{
-      width: 70%;
+      width: 100%;
       border-bottom: 2px dashed gray;
     }
 
@@ -24,20 +32,37 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+   
+    @media @phone{
+      width: 100%;
+      margin: 0;
+      flex-direction: column;
+    }
+    
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @phone{
+        width: 100%;
+        margin: 2rem 0;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @phone{
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
+        @media @phone{
+          width: 100%;
+        }
       }
     }
   }
@@ -45,6 +70,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @phone{
+      width: 100%;
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -60,6 +89,10 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @phone{
+      width: 100%;
+      margin: 2rem 0
+    }
 
     img {
       border-radius: 10px;
@@ -71,9 +104,15 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @phone{
+      width: 100%;
+      flex-direction: column;
+      margin: 0;
+      align-items: center;
+    }
 
     .destination {
-      width: 30%;
+      width: 80%;
       margin-bottom: 30px;
     }
   }
@@ -82,4 +121,7 @@
 button{
   .border();
   .buttonstyle(center, flex-end);
+  @media @phone{
+    width: 100%
+  }
 }
