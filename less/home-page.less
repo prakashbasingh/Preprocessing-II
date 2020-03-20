@@ -1,26 +1,54 @@
   header{
-    // align-self: center;
-    width: 50%;
+    max-width: 800px;
+    // width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    margin: 0 55rem;
+    justify-content: space-around;
 
+    @media @tablet{
+      max-width: 95%;
+      margin: 0 auto;
+      justify-content: center;
+      // background: gray;
+    }
     @media @phone {
-      width: 100%;
-      margin: 0;
+      max-width: 95%;
+      margin: 0 auto;
       justify-content: center;
     }
   
 
     .headerImage{
       width: 100%;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
+    // margin: 0 27%;
+    @media @tablet{
+      max-width: 95%;
+      margin: 0 auto;
+      justify-content: center;
+  }
+    @media @phone {
+      width: 100%;
+      margin: 0;
+      justify-content: center;
+    }
     }
     .firstparagraph{
       width: 100%;
+      // margin: 0 27%;
       border-bottom: 2px dashed gray;
+
+      @media @tablet{
+        max-width: 95%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+      @media @phone {
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+      }
     }
 
   }
@@ -33,18 +61,26 @@
     flex-wrap: wrap;
     justify-content: space-between;
    
+    @media @tablet{
+      max-width: 95%;
+      margin: 0 auto;
+      justify-content: center;
+  }
     @media @phone{
-      width: 100%;
-      margin: 0;
+      max-width: 95%;
+      margin: 0 auto;
       flex-direction: column;
     }
-    
-
-   
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @tablet{
+        max-width: 100%;
+        margin: 2rem 0;
+        justify-content: center;
+    }
       @media @phone{
         width: 100%;
         margin: 2rem 0;
@@ -87,11 +123,11 @@
   }
 
   .content-destination {
-    width: 75%;
+    width: 80%;
     margin: 0 auto 30px;
     @media @phone{
-      width: 100%;
-      margin: 2rem 0
+      max-width: 100%;
+      margin: 0 auto;
     }
 
     img {
